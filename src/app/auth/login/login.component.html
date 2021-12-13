@@ -1,0 +1,30 @@
+
+<div class="p1" fxLayoutAlign="center center" fxFlexFill >
+    <mat-card fxFlex.="50" fxFlex.gt-md="50" fxFlex.xs="100" >
+        <mat-toolbar color="primary">login page</mat-toolbar>
+        
+        <div class="ct" >
+            <img  src="assets/images/auth.jpg"  height=200px width=200px >
+        </div>
+        <form  fxLayoutAlign="stretch" fxLayout="column"ngForm #assignmentForm class="form" (submit)="onSubmit(); assignmentForm.reset();">
+            
+            <!-- <img style="position:absolute ; height: 200px; "  src="assets/images/auth.jpg" > -->
+            <mat-form-field >
+             
+              <input matInput placeholder="EMAIL" [(ngModel)]="email" name="email"required>
+            </mat-form-field>
+          
+            <mat-form-field >
+              
+                <input matInput type="password" placeholder="password" [(ngModel)]="password" name="password"required>
+                <!-- <input matInput placeholder="Password"[(ngModel)]="password" name="password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+               
+                
+            </mat-form-field>
+            
+            <button mat-raised-button type="submit" color="primary">LOGIN</button>
+          </form>
+          
+    </mat-card>
+</div>

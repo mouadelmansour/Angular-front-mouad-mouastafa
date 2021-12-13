@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    /* height: 500px; */
+    /* padding-top: 220px; */
+
+}
+.p1{
+    
+    
+    background-color: blueviolet;
+}
+.img {
+ 
+    
+  }
+.ct{
+   display: flex;
+   justify-content: center;
+}  
